@@ -68,11 +68,11 @@ global-tech-layoffs-analysis/
 │   ├── 03_clean_data.sql
 │   ├── 04_prepare_features.sql
 │   └── 05_insights.sql
-├── visuals/
+├── viz/
 │   ├── tech_layoffs_analysis.twb
 │   └── screenshots/          # dashboard images
-├── development_log.md                # development log
-└── README.md                   # this file 
+├── PROCESS.md                # development log (formerly roadmap)
+└── README.md                 # this file
 
 ## How to Reproduce
 1. Clone the repo:

@@ -1,0 +1,41 @@
+# Project Development Log
+
+This file documents the actual steps taken to complete the analysis (not a pre-planned roadmap).
+
+### Phase 1 – Data Import & Exploration
+- Imported raw CSV via pgAdmin  
+- Explored raw data: missing values, duplicates (~8–10 pairs), date range, industry variations  
+- Script: `02_explore_raw_data.sql`
+
+### Phase 2 – Cleaning
+- Kept raw table untouched  
+- Created layered views: strict (non-null Laid_Off), dedup, final complete (1,644 rows)  
+- Standardized industries (CASE with 'Other / Rare' for ≤2 occurrences)  
+- No imputation — filtered instead  
+- Script: `03_clean_data.sql`
+
+### Phase 3 – Feature Engineering
+- Added 7 features in chained views:  
+  1. Layoff severity bucket  
+  2. Percentage bucket  
+  3. Time features (month, quarter, year-month)  
+  4. Calculated percentage (verified source)  
+  5. Company stage simplified (Early / Late / Public / Other)  
+  6. Funding bucket (Low / Medium / High)  
+  7. Large layoff flag (>200)  
+- Final view: `v_analysis_ready`  
+- Script: `04_prepare_features.sql`
+
+### Phase 4 – Insights & Aggregation
+- Wrote queries for totals, tops, trends, breakdowns  
+- Script: `05_insights.sql`
+
+### Phase 5 – Visualization
+- Exported `v_analysis_ready` to CSV  
+- Built Tableau dashboard with 4–7 sheets  
+- Published to Tableau Public  
+- Workbook: `viz/tech_layoffs_analysis.twb`
+
+### Phase 6 – Documentation & Publish
+- Wrote README.md  
+- Committed everything to GitHub  

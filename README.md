@@ -71,8 +71,8 @@ global-tech-layoffs-analysis/
 ├── viz/
 │   ├── tech_layoffs_analysis.twb
 │   └── screenshots/          # dashboard images
-├── PROCESS.md                # development log (formerly roadmap)
-└── README.md                 # this file
+├── PROCESS.md                # development log
+└── README.md
 
 ## How to Reproduce
 1. Clone the repo:

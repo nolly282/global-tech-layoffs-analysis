@@ -70,11 +70,11 @@ Live version (Tableau Public):
   - 04_prepare_features.sql  
   - 05_insights.sql  
 
-- **viz/**  
+- **visuals/**  
   - tech_layoffs_analysis.twb  
   - screenshots/ (dashboard images)
 
-- **PROCESS.md** (development log)  
+- **development_log.md** (development log)  
 - **README.md** (this file)
 
 ## How to Reproduce

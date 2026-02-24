@@ -54,25 +54,28 @@ Live version (Tableau Public):
 
 
 
-## Folder Structure (at completion)
-global-tech-layoffs-analysis/
-├── data/
-│   ├── raw/
-│   │   └── tech_layoffs_til_2025.csv
-│   └── cleaned/
-│       └── tech_layoffs_analysis_ready.csv
-├── sql/
-│   ├── 00_setup_database.sql
-│   ├── 01_create_raw_table.sql
-│   ├── 02_explore_raw_data.sql
-│   ├── 03_clean_data.sql
-│   ├── 04_prepare_features.sql
-│   └── 05_insights.sql
-├── viz/
-│   ├── tech_layoffs_analysis.twb
-│   └── screenshots/          # dashboard images
-├── PROCESS.md                # development log
-└── README.md
+## Project Folder Structure
+
+- **data/**  
+  - raw/  
+    - tech_layoffs_til_2025.csv  
+  - cleaned/  
+    - tech_layoffs_analysis_ready.csv  
+
+- **sql/**  
+  - 00_setup_database.sql  
+  - 01_create_raw_table.sql  
+  - 02_explore_raw_data.sql  
+  - 03_clean_data.sql  
+  - 04_prepare_features.sql  
+  - 05_insights.sql  
+
+- **viz/**  
+  - tech_layoffs_analysis.twb  
+  - screenshots/ (dashboard images)
+
+- **PROCESS.md** (development log)  
+- **README.md** (this file)
 
 ## How to Reproduce
 1. Clone the repo:
